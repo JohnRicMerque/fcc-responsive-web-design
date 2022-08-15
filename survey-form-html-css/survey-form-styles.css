@@ -3,7 +3,7 @@ body {
     height: 100vh;
     margin: 1;
     color: #0e161e;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Tahoma;
     font-size: 16px;
     background-image: url('paw.png');
     background-repeat: no-repeat;
@@ -14,13 +14,19 @@ body {
 h1 {
     margin: 1em auto;
     text-align: center;
-    font-family: Tahoma;
     color:white;
+    max-width: 700px;
+    min-width: 300px;
 }
 
 p[id="description"] {
+    margin: 1em auto;
     text-align: center;
     color:white;
+    background-color: #3fa992;
+    padding: 1rem 0;
+    max-width: 700px;
+    min-width: 300px;
 }
 
 fieldset {
@@ -46,4 +52,18 @@ form {
 label {
     display: block;
     margin: 0.5rem 0;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
 }
