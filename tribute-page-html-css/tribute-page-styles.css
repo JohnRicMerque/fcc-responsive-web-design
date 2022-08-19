@@ -6,9 +6,9 @@
 
 header {
     width: 100%;
-    color: rgb(224, 138, 193);
     background-color: rgb(26, 22, 22);
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     position: fixed;
     border-bottom: 5px solid rgb(75, 75, 75);
 }
@@ -18,17 +18,19 @@ h1 {
     font-weight: bold;
     font-size: xx-large;
     text-align: center;
+    color: rgb(244, 107, 194);
 }
 
 header > p {
     font-family: sans-serif;
     text-align: center;
     letter-spacing: 3px;
-    color: aliceblue;
+    color: rgb(217, 220, 222);
+    font-size: small;
 }
 
 #image, #img-caption {
-    width: 500px;
+    width: 300px;
     min-width: 250px;
     display: block;
     margin-left: auto;
@@ -37,12 +39,12 @@ header > p {
     font-weight: lighter;
     font-size: small;
     text-align: center;
-    color: aliceblue;
+    color: rgb(26, 22, 22);
     padding-bottom: 10px;
 }
 
 figure{
-    background-color: rgb(198, 7, 128);
+    background-color: rgb(254, 230, 246);
 }
 #image {
     padding-top: 100px;
@@ -50,11 +52,24 @@ figure{
 
 section {
     font-family: sans-serif;
-}
-
-#who {
     width: 70%;
     text-justify: auto;
     text-align:justify;
     margin: auto;
+    padding-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: rgb(161, 9, 126);
+    font-weight: bold;
+}
+
+p, li {
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
 }
