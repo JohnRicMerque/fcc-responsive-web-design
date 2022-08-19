@@ -1,3 +1,60 @@
 * {
     box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    color: rgb(224, 138, 193);
+    background-color: rgb(26, 22, 22);
+    padding: 20px;
+    position: fixed;
+    border-bottom: 5px solid rgb(75, 75, 75);
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+header > p {
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    color: aliceblue;
+}
+
+#image, #img-caption {
+    width: 500px;
+    min-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    text-align: center;
+    color: aliceblue;
+    padding-bottom: 10px;
+}
+
+figure{
+    background-color: rgb(198, 7, 128);
+}
+#image {
+    padding-top: 100px;
+}
+
+section {
+    font-family: sans-serif;
+}
+
+#who {
+    width: 70%;
+    text-justify: auto;
+    text-align:justify;
+    margin: auto;
 }
