@@ -15,7 +15,7 @@ header {
     background-color: rgb(35, 32, 32);
     padding-top: 20px;
     padding-bottom: 0px;
-    border-bottom: 5px solid rgb(150, 3, 86);
+    border-bottom: 3px solid rgb(138, 6, 68);
     position: fixed;
     opacity: 0.95;
     display: flex;
@@ -41,9 +41,10 @@ header  div p {
     padding-left: 40px;
    
 }
-
-nav ul li {
+ul {
     list-style-type: none;
+}
+nav ul li {
     display: inline-block;
     padding: 15px 20px;
 }
@@ -93,6 +94,7 @@ section {
     text-align:justify;
     margin: auto;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 
@@ -101,6 +103,7 @@ h2 {
     color: rgb(150, 3, 86);
     font-weight: bold;
     padding-bottom: 20px;
+    font-size: xx-large;
 }
 
 p, li {
@@ -108,4 +111,37 @@ p, li {
     font-family: sans-serif;
     font-size: 15px;
     color: rgb(50, 46, 46);
+    font-size: large;
+}
+
+.picture {
+    width: 50%;
+    display: block;
+    margin:auto;
+    padding: 10px
+}
+
+#pink-revolution {
+    background-color: rgb(254, 230, 246);
+}
+
+figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: small;
+    text-align: center;
+}
+footer p{
+    background-color: rgb(35, 32, 32); 
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(217, 220, 222);
+    font-size: smaller;
+}
+
+.footer {
+    padding-top: 10px;
+   
 }
