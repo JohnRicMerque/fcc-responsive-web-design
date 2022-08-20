@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/tribute-page.html"
+  status = 200
