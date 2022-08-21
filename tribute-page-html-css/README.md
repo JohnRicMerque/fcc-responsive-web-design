@@ -15,7 +15,7 @@
 
 ### Links
 
-- Live Site URL: [Lani Robredo Page - Netlify](https://timely-strudel-3fe3d9.netlify.app/)
+- Live Site URL: [Leni Robredo Page - Netlify](https://timely-strudel-3fe3d9.netlify.app/)
 
 ### Built with
 
