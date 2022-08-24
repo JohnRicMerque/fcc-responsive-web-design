@@ -4,112 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="technical-documentation-page.css">
+    <script src="https://kit.fontawesome.com/9571bd4a59.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main id="main-doc">
+    <main id="main">
 
         <!-- navigation start -->
-        <nav id="navbar">
-            <header>CSS basics</header>
-            <ul>
-                <li><a class="nav-link" href="#Introduction">What is CSS?</a></li>
-                <li><a class="nav-link" href="#Anatomy">Anatomy of a CSS ruleset</a></li>
-                <li><a class="nav-link" href="#FAT">Fonts and text</a></li>
-                <li><a class="nav-link" href="#Boxes">CSS: all about boxes</a></li>
-                <li><a class="nav-link" href="#References">References</a></li>
-                <li><a class="nav-link" ></a></li>
-            </ul>
-        </nav>
+        <div class="menu">
+            <p id="CSS">CSS BASICS</p>
+            <a class="nav-link" href="#What_is_CSS?">What is CSS?</a>
+            <a class="nav-link" href="#Anatomy">Anatomy</a>
+            <a class="nav-link" href="#Fonts_&_Text">Fonts & Text</a>
+            <a class="nav-link" href="#CSS:_all_about_boxes">CSS Boxes</a>
+            <a class="nav-link" href="#References">References</a>
+        </div>
         <!-- navigation end -->
 
         <!-- content start -->
-        <section class="main-section">
-            <header id="Introduction"><h2>What is CSS?</h2></header>
-            <p>
-                Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:
-            </p>
-            <code>p {
-                color: red;
-              }
-            </code>
-        </section>
+        <div class="body">
+            <section class="main-section" id="What_is_CSS?">
+                <header id="Introduction">What is CSS?</header>
+                <p>
+                    Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language.</p>
+                <p>
+                    CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:</p>
+                <code>p {
+                    color: red;
+                }
+                </code>
+            </section>
 
-        <section class="main-section">
-            <header id="Anatomy"><h2>Anatomy of a CSS ruleset</h2></header>
-            <p>Let's dissect the CSS code for red paragraph text to understand how it works :</p>
-            <figure>
-                <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png">
-                <figcaption>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:</figcaption>
-            </figure>
-            <ul>
-                <li>Selector</li>
-                <li>Declaration</li>
-                <li>Properties</li>
-                <li>Property value</li>
-            </ul>
-            <p>To modify multiple property values in one ruleset, write them separated by semicolons, like this:</p>
-            <code>p {
-                color: red;
-                width: 500px;
-                border: 1px solid black;
-              }
-            </code>
-        </section>
-        
-        <section class="main-section">
-            <header id="FAT"><h2>Fonts and text</h2></header>
-            <p>Now that we've explored some CSS fundamentals, let's improve the appearance of the example by adding more rules and information to the style.css file.</p>
-            <ol>
-                <li>First, find the output from Google Fonts that you previously saved from What will your website look like?. Add the link element somewhere inside your index.html's head (anywhere between the head tags).
-                </li>
-                <li>
-                    Next, delete the existing rule you have in your style.css file. It was a good test, but let's not continue with lots of red text.
-                </li>
-                <li>
-                    Add the following lines (shown below), replacing the font-family assignment with your font-family selection from What will your website look like?. The property font-family refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page
-                    <code>html {
-                        font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
-                        font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-                      }
-                    </code>
-                </li>
-                <li>Now let's set font sizes for elements that will have text inside the HTML body. We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.
-                    <code>h1 {
-                        font-size: 60px;
-                        text-align: center;
-                      }
-                      
-                      p, li {
-                        font-size: 16px;
-                        line-height: 2;
-                        letter-spacing: 1px;
-                      }
-                    </code>
-                </li>
-                <li>
-                    Adjust the px values as you like. Your work-in-progress should look similar to this:
-                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-font-small.png">
-                </li>
+            <section class="main-section" id="Anatomy">
+                <header id="Anatomy">Anatomy of a CSS ruleset</header>
+                <p>Let's dissect the CSS code for red paragraph text to understand how it works :</p>
+                <figure>
+                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png">
+                    <figcaption>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:</figcaption>
+                </figure>
+                <ul>
+                    <li>Selector</li>
+                    <li>Declaration</li>
+                    <li>Properties</li>
+                    <li>Property value</li>
+                </ul>
+                <p>To modify multiple property values in one ruleset, write them separated by semicolons, like this:</p>
+                <code>p {
+                    color: red;
+                    width: 500px;
+                    border: 1px solid black;
+                }
+                </code>
+            </section>
             
-            </ol>
-        </section>
+            <section class="main-section" id="Fonts_&_Text">
+                <header id="FAT">Fonts and text</header>
+                <p>Now that we've explored some CSS fundamentals, let's improve the appearance of the example by adding more rules and information to the style.css file.</p>
+                <ol>
+                    <li>First, find the output from Google Fonts that you previously saved from What will your website look like?. Add the link element somewhere inside your index.html's head (anywhere between the head tags).
+                    </li>
+                    <li>
+                        Next, delete the existing rule you have in your style.css file. It was a good test, but let's not continue with lots of red text.
+                    </li>
+                    <li>
+                        Add the following lines (shown below), replacing the font-family assignment with your font-family selection from What will your website look like?. The property font-family refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page
+                        <code>html {
+                            font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+                            font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+                        }
+                        </code>
+                    </li>
+                    <li>Now let's set font sizes for elements that will have text inside the HTML body. We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.
+                        <code>h1 {
+                            font-size: 60px;
+                            text-align: center;
+                        }
+                        </code>
+                        <code>
+                        p, li {
+                            font-size: 16px;
+                            line-height: 2;
+                            letter-spacing: 1px;
+                        }
+                        </code>
+                    </li>
+                    <li>
+                        Adjust the px values as you like. Your work-in-progress should look similar to this:
+                        <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-font-small.png">
+                    </li>
+                
+                </ol>
+            </section>
 
-        <section class="main-section">
-            <header id="Boxes"><h2>CSS: all about boxes</h2></header>
-            <p>Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.</p>
-            <p>CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:</p>
-            <ul>
-                <li>padding, the space around the content. In the example below, it is the space around the paragraph text.</li>
-                <li>border, the solid line that is just outside the padding.</li>
-                <li>margin, the space around the outside of the border.</li>
-            </ul>
-        </section>
+            <section class="main-section" id="CSS:_all_about_boxes">
+                <header id="Boxes">CSS: all about boxes</header>
+                <p>Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position.</p> 
+                <p>Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.</p>
+                <p>CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:</p>
+                <ul>
+                    <li>padding, the space around the content. In the example below, it is the space around the paragraph text.</li>
+                    <li>border, the solid line that is just outside the padding.</li>
+                    <li>margin, the space around the outside of the border.</li>
+                </ul>
+            </section>
 
-        <section class="main-section">
-            <header id="References"><h2>References</h2></header>
-            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">MDN</a></p>
-        </section>
+            <section class="main-section" id="References">
+                <header id="Reference">References</header>
+                <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">MDN</a></p>
+                <p>The images and information are credited to their rightful owners</p>
+            </section>
+        </div>
         <!-- content end -->
 
     </main>

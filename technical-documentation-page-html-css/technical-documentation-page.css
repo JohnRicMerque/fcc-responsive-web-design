@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+.menu {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(10, 5, 33);
+    position: fixed;
+    text-align: center;
+}
+
+#CSS {
+    color: rgb(222, 247, 135);
+    letter-spacing: 4px;
+    padding: 15px;
+    font-size: medium;
+}
+
+.menu a {
+    text-decoration: none;
+    color: azure;
+    font-size: 18px;
+    display: list-item;
+    padding: 20px;
+    border-top: 2px solid black;
+
+}
+
+.menu a:hover{
+    background-color: rgb(222, 247, 135);
+    transition: 0.5s;
+    letter-spacing: 1.3px;
+}
+
+.body {
+    width: 100%;
+    padding-left: 21%;
+}
+
+header {
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+.body p, .body ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
