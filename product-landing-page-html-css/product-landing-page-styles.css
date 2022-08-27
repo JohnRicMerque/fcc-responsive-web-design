@@ -26,7 +26,6 @@ html {
 }
 
 
-
 /* START HEADER*/
 #header {
     display: flex;
@@ -108,7 +107,7 @@ html {
 
 }
 
-#description {
+.description {
     font-size: 2rem;
     font-family: 'Lucida Sans Unicode', sans-serif;
     color: rgb(66, 64, 64);
@@ -149,6 +148,7 @@ html {
     animation: color-animation 4s linear infinite;
     font-weight: bold;
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .rice-images {
@@ -170,11 +170,15 @@ html {
     transform: scale(1.2) rotate(-1deg);
     filter: grayscale(0%)
 }
+
+
+
+
 /* START FORM */
 
 section {
     width: 100%;
-    margin-bottom: 4rem;
+    margin: 3rem auto;
     align-items: center;
 
 }
@@ -236,3 +240,55 @@ section {
 }
 
 
+
+
+/* START ABOUT --> */
+#about {
+    background-color: #262525;
+    height: 100%;
+    color: aliceblue;
+}
+
+footer p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+
+@media only screen and (max-width: 768.9px) {
+    #nav-bar ul li a {
+        font-size: 1rem;
+    }
+    #prepage {
+        display: flex;
+        flex-direction: column-reverse;
+        place-items: center;
+        margin: 7rem auto;}
+        
+    .rice-img {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    #prepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        margin: 7rem auto;
+        grid-template-areas: 
+            "intro intro";
+    }
+    
+    .rice-img {
+        width: 75%; 
+    }
+
+    #intro {
+        width: fit-content;
+        grid-area: intro;
+    }
+}
