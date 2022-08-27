@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,14 +10,16 @@ html {
     font-size: 62.5%;
     text-decoration: none;
     font-family: Tahoma, sans-serif;
+    background-color: #f5F2EA;
 }
+
 #header {
     display: flex;
     justify-content: space-between;
     top: 0%;
     padding: 1rem 0;
     align-items: center;
-    background-color: bisque;
+    background-color: #0f0f0f;
     position: fixed;
     width: 100%;
 }
@@ -28,6 +32,9 @@ html {
 
 #header h1 {
     font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(154, 169, 115);
+    letter-spacing: 1rem;
 }
 
 #nav-bar ul {
@@ -36,19 +43,31 @@ html {
     padding-right: 2rem;
 }
 
-#nav-bar ul li{
-    padding-left: 1.5rem;
+#nav-bar ul li {
+    padding-left: 2rem;
+    
 }
 
+#nav-bar ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+}
 .nav-link{
     font-size: 1.3rem;
     letter-spacing: 0.175rem;
     font-weight: bold;
 }
 
+section {
+    width: 100%;
+    margin-bottom: 4rem;
+
+}
 #form {
     margin-top: 7rem;
-    width: 75%;
+    width: 60%;
+    min-width: 420px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -56,4 +75,30 @@ html {
 #form fieldset {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    background-color: #d0c7c2;
+    border: 0.5rem solid rgb(79, 107, 6);
+    border-radius: 2%;
+}
+
+#form fieldset h2{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+#form fieldset label{
+    font-size: larger;
+    padding-top: 2rem;
+}
+
+#product {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    html {
+        background-color: #000000;
+    }
 }
