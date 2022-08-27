@@ -17,7 +17,7 @@
             <ul>
                 <li><a class="nav-link" href="#product">PRODUCT</a></li>
                 <li><a class="nav-link" href="#contact">CONTACT</a></li>
-                <li><a class="nav-link" href="#pricing">ABOUT</a></li>
+                <li><a class="nav-link" href="#about">ABOUT</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +30,7 @@
         <div id="intro">
             <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/616/616428.png">
             <h1 id="product-name">RicRice</h1>
-            <p id="description">We offer the best rice you can get in the Philippines! Come here in our store located in Looc, Romblon, Philippines. <span class="hashtag">#SupportLocalFarmers</span> </p>
+            <p class="description">We offer the best rice you can get in the Philippines! Come here in our store located in Looc, Romblon, Philippines. <span class="hashtag">#SupportLocalFarmers</span> </p>
         </div>
     </section>
     <!-- intro end-->
@@ -38,6 +38,8 @@
     <!-- products start-->
     <section id="product">
         <h2 class="products">RICE TYPES</h2>
+        <p class="description">These different types of rice are harvested locally in the fields of Romblon.</p> 
+        <p class="description">Supporting our local farmers will help them big time!</p>
         
         <div class="rice-images">
             <img id="brown-rice" class="rice-image" src="https://www.wellcurve.in/blog/wp-content/uploads/2021/04/Brown-rice-1.jpg">
@@ -51,24 +53,24 @@
 
     </section>
     <!-- products end-->
+
     <!-- form start-->
     <section id="contact">
         <form id="form">
             <fieldset>
                 <h2>Contact Us</h2>
-                <label>Name: </label><input id="name" type="text" placeholder="Your Name" target="name">
-                <label>Email: </label><input id="email" type="email" placeholder="Email Address" target="email">
-                <label>Message: </label><textarea id="message" cols="10" rows="6" placeholder="Type Your Message" target="message"></textarea>
+                <label>Name: </label><input id="name" type="text" placeholder="Your Name" target="name" required>
+                <label>Email: </label><input id="email" type="email" placeholder="Email Address" target="email"  required>
+                <label>Message: </label><textarea id="message" cols="10" rows="6" placeholder="Type Your Message" target="message" required></textarea>
                 <input id="submit" type="submit" target="send">
             </fieldset>
         </form>
     </section>
     <!-- form end-->
-    
 
-
-    <section id="ABOUT">
-    </section>
-
+    <footer id="about">
+        <p>This is not an official website. The images used are not mine (REF: https://www.wellcurve.in)</p>
+        <p>All rights reserved!</p>
+    </footer>
 </body>
 </html>
