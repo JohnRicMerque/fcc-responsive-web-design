@@ -10,28 +10,32 @@ html {
     font-size: 62.5%;
     text-decoration: none;
     font-family: Tahoma, sans-serif;
-    background-color: #f5F2EA;
+    background-color: rgb(255, 255, 255);
 }
 
 #header {
     display: flex;
     justify-content: space-between;
     top: 0%;
-    padding: 1rem 0;
+    padding: 2rem 0;
     align-items: center;
     background-color: #0f0f0f;
     position: fixed;
     width: 100%;
 }
 
+#logo {
+    display: flex;
+    margin-left: 3rem;
+}
+
 #header-img {
     width: 4rem;
     height: 4rem;
-    margin-left: 2rem;
 }
 
 #header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Permanent Marker', cursive;
     color: rgb(154, 169, 115);
     letter-spacing: 1rem;
@@ -44,7 +48,7 @@ html {
 }
 
 #nav-bar ul li {
-    padding-left: 2rem;
+    margin-left: 3rem;
     
 }
 
@@ -53,19 +57,31 @@ html {
     color: antiquewhite;
 }
 .nav-link{
-    font-size: 1.3rem;
-    letter-spacing: 0.175rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
     font-weight: bold;
+}
+
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#rice-img {
+    height: 125%;
+    z-index: -1;
 }
 
 section {
     width: 100%;
     margin-bottom: 4rem;
+    align-items: center;
 
 }
 #form {
-    margin-top: 7rem;
-    width: 60%;
+
+    width: 80%;
     min-width: 420px;
     max-width: 600px;
     margin-left: auto;
@@ -76,29 +92,37 @@ section {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background-color: #d0c7c2;
-    border: 0.5rem solid rgb(79, 107, 6);
-    border-radius: 2%;
+    border: 0.3rem solid rgb(214, 214, 214);
+    border-radius: 2%
 }
 
 #form fieldset h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     
 }
 
 #form fieldset label{
-    font-size: larger;
+    font-size: large;
+    font-weight: bold;
     padding-top: 2rem;
+    color: #494848;
+}
+
+#form fieldset input:not(#submit), textarea {
+    border: 0.3rem solid rgb(214, 214, 214);
+}
+
+#submit {
+    padding: 1rem;
+    background-color: rgb(154, 169, 115);
+    border-color: #ffffff;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2rem;
 }
 
 #product {
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 1000px) {
-    html {
-        background-color: #000000;
-    }
 }
