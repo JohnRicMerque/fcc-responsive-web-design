@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    text-decoration: none;
+    font-family: Tahoma, sans-serif;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    top: 0%;
+    padding: 1rem 0;
+    align-items: center;
+    background-color: bisque;
+    position: fixed;
+    width: 100%;
+}
+
+#header-img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+#nav-bar ul li{
+    padding-left: 1.5rem;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    letter-spacing: 0.175rem;
+    font-weight: bold;
+}
+
+#form {
+    margin-top: 7rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form fieldset {
+    display: flex;
+    flex-direction: column;
+}
