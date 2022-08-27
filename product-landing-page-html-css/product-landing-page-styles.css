@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,6 +25,9 @@ html {
     background-color: rgb(236, 239, 228);
 }
 
+
+
+/* START HEADER*/
 #header {
     display: flex;
     justify-content: space-between;
@@ -121,8 +136,40 @@ html {
 }
 
 
+/* START PRODUCT */
+#product{
+    display: flex;
+    flex-direction: column;
+}
 
+#product h2{
+    --color-1: #607104;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+    animation: color-animation 4s linear infinite;
+    font-weight: bold;
+    font-size: 4rem;
+}
 
+.rice-images {
+    width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+}
+
+.rice-image {
+    width: 100%;
+    border: 0.5rem solid #3c3c3c;
+    filter: grayscale(40%);
+    border-radius: 5%;
+}
+
+.rice-image:hover {
+    transform: scale(1.2) rotate(-1deg);
+    filter: grayscale(0%)
+}
 /* START FORM */
 
 section {
@@ -187,3 +234,5 @@ section {
     display: flex;
     justify-content: center;
 }
+
+
