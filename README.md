@@ -4,4 +4,4 @@ Learning responsive web design using HTML &amp; CSS through a project-based resp
 # Certification
 ![image](https://user-images.githubusercontent.com/92630490/187161323-df354aae-a9dc-475f-b159-671fc8fab00d.png)
 
-### Link: https://www.freecodecamp.org/certification/JohnRicMerque/responsive-web-design
+Link: https://www.freecodecamp.org/certification/JohnRicMerque/responsive-web-design
